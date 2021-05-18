@@ -2,47 +2,238 @@
 <html lang="fr">
     <head>
         <title>PAN Lili Portfolio </title>
-        <link rel="stylesheet" type="text/css" href="../src/personal_portfolio.css">
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../src/personal_portfolio.css">
+        <script src="../src/personal_portfolio.js" type="text/javascript"></script> 
     </head>
     <body>
         <header>
-            <div class="name_title_blocked">
-                <div class="cube"></div> 
-                <h2>Lili PAN<h2>
-                <h4> / DÉVELOPPEUR FRONT-END</h4>
+            <div class="name_title">
+                <div class="header-cube"></div> 
+                <h2 id="name-header">Lili PAN<h2>
+                <h4>/ DÉVELOPPEUSE FRONT-END</h4>
             </div>
             <nav>
                 <ul>
-                    <li><a href="./personal_portfolio.html">À PROPOS</a></li>
-                    <li><a href="#">CV</a></li>
-                    <li><a href="#">PROJET</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li id="propos-nav"><a href="#">À PROPOS</a></li>
+                    <li id="cv-nav"><a href="#">CV</a></li>
+                    <li id="projet-nav"><a href="#">PROJET</a></li>
+                    <li id="contact-nav"><a href="#">CONTACT</a></li>
                 </ul>
             </nav>   
         </header>
-        <main>
+        <div id="propos">
             <div class="background_left"></div>
-            <div class="presentation_left">
-                <div class="name_title">
-                    <h2>Lili PAN</h2>
-                    <div class="line"></div>
-                    <h4>DÉVELOPPEUR FRONT-END</h4>
+            <div class="presentation">
+                <div class="presentation_left">
+                    <div class="bref_presentation">
+                        <img alt="Photo PAN Lili" src="source/Pan_lili.JPG">
+                        <div class="name_title_presentation">
+                            <h3>Lili <br>PAN</h3>
+                            <hr class="presentation-hr">
+                            <h4>DÉVELOPPEUSE FRONT-END</h4>
+                        </div> 
+                    </div>
+                    <div class="logos">
+                        <a href="#"><img alt="Logo Linkdin" src="./source/logo_Linkdin.png"></a>
+                        <a id="navigate-to-email>" href="mailto: lilipan56@gmail.com"><img alt="Logo Email" src="./source/logo_Email.jpg"></a>
+                    </div>
+                </div>    
+                <div class="presentation_right">
+                    <h1>Hello</h1>
+                    <h3>Qui je suis et ce que je fais</h3>
+                    <div class="propos-buttons">
+                        <a href="#"><button class="propos-button propos-projets" id="button-projets">PROJETS</button></a>
+                        <a href="#"><button class="propos-button propos-cv" id="button-cv">CV</button></a>
+                    </div>
+                    <p>Après avoir effectué une formation de 1 an en ligne Codecademy, j'aspire à trouver mon stage en tant que développeur Front-end.</p>
                 </div>
-                <div class="logo">
-                    <a href="#"><img alt="Logo Linkdin" src="./source/logo_Linkdin.png"></a>
-                    <a id="navigate-to-email>" href="mailto: lilipan56@gmail.com"><img alt="Logo Email" src="./source/logo_Email.jpg"></a>
+            </div>   
+        </div>
+        <div id="cv">
+           <h2>CV</h2>
+           <hr class="cv-hr">
+           <button class="cv-download">TÉLÉCHARGER CV</button>
+           <div class="skills cv-content">
+                <h3>Compétences</h3>
+                <div class="skill-logos">
+                    <img class="logo-html" alt="Logo HTML" src="source/logo-html.svg.png">     
+                    <img class="logo-css" alt="Logo CSS" src="source/logo-css.svg.png">
+                    <img class="logo-js" alt="Logo Javascript" src="source/JavaScript-Logo.png">
+                    <img class="logo-react" alt="Logo React" src="source/react-logo.png">
                 </div>
-            <div class="presentation_right">
-                <h1>Hello</h1>
-                <h2>Qui je suis et ce que je fais</h2>
-                <div class="buttons">
-                    <button class="cv"><a href="#">CV</a></button>
-                    <button class="projet"><a href="#">PROJETS</a></button>
+           </div>
+           <div class="experiences cv-content">
+                <h3>Expérience</h3>
+                <div class="experience">
+                    <div class="experience-left">
+                        <h4>2020 - Maintenant</h4>
+                        <h5>ÉTUDE EN LIGNE</h5>
+                        <h6>France</h6>
+                    </div>
+                    <div class="experience-right experience-first">
+                        <p>Depuis 2020, je commence à suivre les cours en ligen à Codecademy et OpenClassroom.</p>
+                    </div>   
                 </div>
-                <p>Après avoir effectué une formation de 1 an en ligne Codecademy, j'aspire à trouver mon stage en tant que développeur Front-end.</p>
+                <div class="experience">
+                    <div class="experience-left">
+                        <h4>2018</h4>
+                        <h5>Conseillère de Mode</h5>
+                        <h5>CHANEL, Paris</h5>
+                        <h6>Luxe</h6>
+                    </div>
+                    <div class="experience-right experience-second">
+                        <p>- Accueillir et accompagner les clients<br>
+                            - SAV</p>
+                    </div>        
+                </div>
+                <div class="experience">
+                    <div class="experience-left">
+                        <h4>2016 - 2018</h4>
+                        <h5>Commerciale</h5>
+                        <h5>FINIGATE, Shanghai</h5>
+                        <h6>Agroalimentaire</h6>
+                    </div>
+                    <div class="experience-right experience-third">
+                        <p>- Développer les canaux de distribution<br>
+                            - Fidéliser les clients<br>
+                            - Signer les contrats<br>
+                            - Assurer l'après-vente</p>
+                    </div>        
+                </div>
+                <div class="experience">
+                    <div class="experience-left">
+                        <h4>2015 - 2016</h4>
+                        <h5>Commerciale</h5>
+                        <h5>FOF, Shanghai</h5>
+                        <h6>Agroalimentaire</h6>
+                    </div>
+                    <div class="experience-right experience-fourth">
+                        <p>- Développer les canaux de distribution<br>
+                           - Participer à l'exposition</p>
+                    </div>        
+                </div>   
+           </div>
+           <div class="educations cv-content">
+                <h3>Formation</h3>
+                <div class="education">
+                    <div class="education-left">
+                        <h4>2014 - 2015</h4>
+                    </div>
+                    <div class="education-right education-first">
+                        <h4>Licence 3 Gestion d'Entreprise</h4>
+                        <h5>UFEC - Institut GoldenCollar, France</h5>
+                    </div>
+                </div> 
+                <div class="education">
+                    <div class="education-left">
+                        <h4>2012 - 2014</h4>
+                    </div>
+                    <div class="education-right education-second">
+                        <h4>DUT Techniques de commercialisation</h4>
+                        <h5>IUT de l'Indre, Université d'Orléans, France, France</h5>
+                    </div>
+                </div> 
+                <div class="education">
+                    <div class="education-left">
+                        <h4>2012</h4>
+                    </div>
+                    <div class="education-right education-third">
+                        <h4>DUEF B2 Langue et Littérature Française</h4>
+                        <h5>Université Lumière Lyon 2, France</h5>
+                    </div>
+                </div> 
+                <div class="education">
+                    <div class="education-left">
+                        <h4>2008 - 2011</h4>
+                    </div>
+                    <div class="education-right education-fourth">
+                        <h4>Licence 3 Français Appliqué</h4>
+                        <h5>Ecole de l'Industrie et du Commerce, Chine</h5>
+                    </div>
+                </div>
+           </div>     
+            <div class="languages cv-content">
+                <h3>Langue</h3>
+                <div class="language-flex">
+                    <div class="language">
+                        <div class="circle"></div>
+                        <p>Chinois(Maternel)</p>
+                    </div>
+                    <div class="language">
+                        <div class="circle"></div>
+                        <p>Français(Avancé)</p>
+                    </div>
+                    <div class="language">
+                        <div class="circle"></div>
+                        <p>Anglais(Avancé)</p>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+        <div id="projets">
+            <h2>Projets</h2>
+            <hr class="projets-hr">
+            <p>Vous trouvez ici tous les projets que j'ai réalisé pendant les cours en ligne.</p>
+            <div class="projet-group">
+                <div class='projet-presentation'>
+                    <div class="projet projet-first">
+                        <div class="projet-title">
+                            <div class="rectangle"></div>
+                            <h3>Nom du projet1</h3>
+                        </div>
+                        <p>Présentation du projet</p>
+                    </div>
+                    <div class="projet-img"><img alt="Finigate Logo" src="source/finigate.png"></div>
+                </div>
+                <div class='projet-presentation'>
+                    <div class="projet projet-first">
+                        <div class="projet-title">
+                            <div class="rectangle"></div>
+                            <h3>Nom du projet2</h3>
+                        </div>
+                        <p>Présentation du projet</p>
+                    </div>
+                    <div class="projet-img"><img></div>
+                </div>
             </div>
-        </main>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <hr class="contact-hr">
+            <div class="info-contact">
+                <div class="email">
+                    <h3>Email:</h3>
+                    <p>lilipan56@gmail.com</p>
+                </div>
+                <div class="tel">
+                    <h3>Téléphone:</h3> 
+                    <p>07 67 49 83 69</p>
+                </div>
+            </div>
+            <div class="forms">
+                <div class="form-flex">
+                    <div class="form">
+                        <label for="name">Nom</label>
+                        <input id="name" class="form-content-flex" autocomplete="name" formcontrolname="name" name="name" type="text" required>
+                    </div>
+                    <div class="form">
+                        <label for="tel">Téléphone</label>
+                        <input id="tel"  class="form-content-flex" autocomplete="tel" formcontrolname="tel" name="tel" pattern="[0-9]{10}">
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="email">E-mail</label>
+                    <input id="email" class="form-content" autocomplete="email" formcontrolname="email" name="email" type="email" required>
+                </div>
+                <div class="form">
+                    <label for="message">Messages</label>
+                    <textarea id="message" class="form-content" formcontrolname="message" name="message" required></textarea>
+                </div>
+                <button id="send-message" type="submit" >ENVOYER</button>
+            </div>
+
+        </div>
         <footer>
             <p>© 2021 par Lili PAN</p>
         </footer>
