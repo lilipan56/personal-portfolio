@@ -7,7 +7,7 @@ body{
 .header-cube{
     height: 16px;
     width: 16px;
-    background-color: blue;
+    background-color: #0050FF;
     margin-top: 22px;
 }
 
@@ -23,8 +23,8 @@ header{
     width: 100%;
     top: 0;
     height: 120px;
-    margin-left: -8px;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .name_title{
@@ -44,9 +44,13 @@ header{
     word-spacing: 4px;
 }
 
+.name-title-block{
+    display: flex;
+}
+
 ul li{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 30px;
     font-weight: lighter;
 }
 
@@ -62,12 +66,13 @@ nav{
 
 #propos{
     display: flex;
+    margin-bottom: -780px;
 }
 
 .background_left{
-    width: 500px;
-    height: 850px;
-    background-color: #f9ebdf;
+    width: 45%;
+    height: 900px;
+    background-color: #E6DACE;
     margin-left: -8px;
     z-index: 1;
     position: absolute;
@@ -78,16 +83,17 @@ nav{
     z-index: 2;
     display: flex;
     margin-top: 260px;
-    position: absolute;
+    position: relative;
     margin-left: 180px;  
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .presentation_left{
     width: 400px;
     height: 500px;
-    border: 1px solid #efecea;
-    background-color: #efecea;
+    border: 1px solid #F4ECE6;
+    background-color: #F4ECE6;
     text-align: center;
     margin-top: 20px;
 }
@@ -126,21 +132,11 @@ nav{
     border: 1px solid #ffffff;
     background-color: #ffffff;
     padding-left: 30px;
-    text-align: justify;
+    margin-top: 20px;
 }
 
-.presentation_right h2{
-    font-weight: normal;
-    margin-top: -45px;
-}
-
-.presentation-hr{
-    width: 25px;
-    color: blue;
-}
-
-.propos-button a{
-    text-decoration: none;
+.presentation_right h1{
+    margin-top: 20px;
 }
 
 .propos-button{
@@ -148,11 +144,11 @@ nav{
     height: 40px;
     border-radius: 30px;
     font-size: 16px;
-    border: solid blue 2px;
+    border: solid #0050FF 2px;
 }
 
 .propos-projets{
-    background-color: blue;
+    background-color: #0050FF;
     color: #ffffff;
 }
 
@@ -162,12 +158,12 @@ nav{
 }
 
 .propos-cv:hover{
-    background-color: blue;
+    background-color: #0050FF;
     color: #ffffff;
 }
 
 .propos-projets:hover{
-    border: solid 2px blue;
+    border: solid 2px #0050FF;
     color: #000000;
     background-color: #ffffff;
 }
@@ -185,18 +181,27 @@ nav{
     margin-top: 120px;
     text-align: center;
     width: 100%;
-    background-color: #f9ebdf;
+    background-color: #E6DACE;
     overflow: hidden; 
     margin-bottom: -1030px;
+}
+
+#cv h2{
+    margin-top: 90px;
 }
 
 #cv h3{
     text-align: left;
 }
 
-.cv-hr{
-    width: 15px;
-    color: blue;
+.cv-hr,
+.projets-hr,
+.contact-hr,
+.presentation-hr{
+    width: 25px;
+    color: #0050FF;
+    height: 3px;
+    background-color: #0050FF;
 }
 
 .cv-download{
@@ -204,8 +209,8 @@ nav{
     border-radius: 30px;
     width: 150px;
     height: 50px;
-    background-color: blue;
-    border: 1px solid blue;
+    background-color: #0050FF;
+    border: 1px solid #0050FF;
     color: #ffffff;
     text-align: center;
     font-size: 14px;
@@ -214,24 +219,23 @@ nav{
 .cv-download:hover{
     background-color: transparent;
     color: #000000;
-    border: 2px solid blue;
+    border: 2px solid #0050FF;
 }
 
-.cv-content{
-    margin-left: 350px;
-    margin-top: 80px;
-    margin-right: 330px;
+.cv-contents{
+    width: 870px;
+    margin: 100px auto;
 }
 
 .skill-logos{
     display: flex;
     justify-content: space-around;
     margin-top: 45px;
-    border: solid 1px #efecea;
+    border: solid 1px #ffffff;
     height: 150px;
     width: 860px;
     align-items: center;
-    background-color: #efecea;
+    background-color: #ffffff;
 }
 
 .logo-html{
@@ -254,6 +258,20 @@ nav{
     height: 50px
 }
 
+.experience h4,
+.education-left h4{
+    color: #0050FF;
+    font-size: 20px;
+}
+
+.experience-left h5{
+    font-size: 16px;
+}
+
+.experience-left h6{
+    font-size: 14px;
+}
+
 .experiences{
     margin-top: 130px;
 }
@@ -262,25 +280,26 @@ nav{
     display: flex;
     text-align: left;
     margin-top: 45px;
-    border: solid 1px #efecea;
-    background-color: #efecea;
+    margin-bottom: 45px;
+    border: solid 1px #ffffff;
+    background-color: #ffffff;
     width: 860px;
-    height: 235px;
+    height: 280px;
 }
 
 .experience-left{
     margin-left: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 35%;
 }
 
 .experience-right{
     margin-top: 70px;
     margin-left: 160px;
-}
-
-.experience-fourth{
-    margin-left: 190px;
+    margin-right: 50px;
+    width: 65%;
+    line-height: 2em;
 }
 
 .educations{
@@ -292,8 +311,8 @@ nav{
     display: flex;
     text-align: left;
     width: 860px;
-    border: solid 1px  #efecea;
-    background-color:  #efecea;
+    border: solid 1px  #ffffff;
+    background-color:  #ffffff;
 }
 
 .education-left{
@@ -313,9 +332,11 @@ nav{
 }
 
 .experience:hover,
-.education:hover{
-    background-color: blue;
-    color: #ffffff;
+.education:hover,
+.skill-logos:hover,
+.language-flex:hover{
+    background-color: #F4ECE6;
+    border-color: #F4ECE6;
 }
 
 .languages{
@@ -325,7 +346,7 @@ nav{
 .language .circle{
     height: 10px;
     width: 10px;
-    background-color: blue;
+    background-color: #0050FF;
     border-radius: 50%;
     margin-top: 18px;
     margin-right: 8px;
@@ -337,8 +358,8 @@ nav{
     margin-top: 45px;
     margin-bottom: 90px;
     width: 860px;
-    border: solid 1px  #efecea;
-    background-color:  #efecea;
+    border: solid 1px  #ffffff;
+    background-color:  #ffffff;
 }
 
 .language{
@@ -350,18 +371,11 @@ nav{
 }
 
 #projets{
-    background-color: #f9ebdf;
+    background-color: #E6DACE;
     margin-top: 120px;
     text-align: center;
     margin-bottom: -1030px;
     height: 1500px;
-}
-
-.projets-hr{
-    width: 25px;
-    color: blue;
-    height: 3px;
-    background-color: blue;
 }
 
 #projets h2{
@@ -410,13 +424,13 @@ nav{
 .rectangle{
     width: 8px;
     height: 25px;
-    background-color: blue;
+    background-color: #0050FF;
     margin-top: 15px;
 }
 
 .projet-title h3{
     margin-left: 20px;
-    color: blue;
+    color: #0050FF;
 }
 
 .projet p{
@@ -424,18 +438,11 @@ nav{
 }
 
 #contact{
-    background-color: #f9ebdf;
+    background-color: #E6DACE;
     margin-top: 120px;
     text-align: center;
     height: 800px;
     margin-bottom: -1020px;
-}
-
-.contact-hr{
-    width: 50px;
-    height: 5px;
-    background-color: blue;
-    border: 1px solid blue;
 }
 
 #contact h2{
@@ -443,15 +450,20 @@ nav{
 }
 
 .info-contact{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+    margin-top: 80px;
+    width: 380px;
+    height: 230px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .email,
 .tel{
+    margin-top: 30px;
     display: flex;
-    padding-left: 35px;
+    justify-content: center;
 }
 
 .email p,
@@ -460,12 +472,17 @@ nav{
     margin-left: 10px; 
 }
 
+#contact-email{
+    text-decoration: none;
+    color: #000000;
+}
+
 .forms{
-    width: 650px;
-    height: 380px;
-    border: 1px solid #efecea;
+    width: 680px;
+    height: 400px;
+    border: 1px solid #ffffff;
     margin: 60px auto;
-    background-color: #efecea;
+    background-color: #ffffff;
     text-align: left;
 }
 
@@ -487,6 +504,7 @@ nav{
 
 #message{
     width: 420px;
+    height: 150px;
 }
 
 .form-flex{
@@ -500,9 +518,11 @@ nav{
     border-radius: 30px;
     width: 120px;
     height: 38px;
-    border: 2px solid blue;
-    background-color: blue;
+    border: 2px solid #0050FF;
+    background-color: #0050FF;
     color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 #send-message:hover{
@@ -515,4 +535,98 @@ footer{
     margin-top: 1050px;
     font-size: 12px;
     text-align: center;
+}
+
+@media (max-width: 1235px) {
+    .name-title-block{
+        display: block;
+        margin-top: -3px;
+    }
+
+    .name_title h4{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1070px){
+    .name-title-block h4{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1050px){
+    .name_title{
+        display: none;
+    }
+
+    nav{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 890px){
+    .background_left{
+        height: 800px;
+    }
+
+    .presentation_left{
+        width: 210px;
+        height: 400px;
+    }    
+
+    .presentation_right{
+        width: 190px;
+        height: 400px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
+
+    .bref_presentation img{
+        height: 160px;
+        width: 160px;
+        margin-top: 25px;
+    }
+
+    .name_title_presentation h4{
+        font-size: 13px;
+    }
+
+    .presentation_right h1{
+        font-size: 39px;
+    }
+
+    .presentation_right h3{
+        font-size: 14px;
+    }
+
+    .presentation_right p{
+        text-align: justify;
+        font-size: 13px;
+        margin-top: 30px;
+    }
+
+    .logos{
+        width: 210px;
+        height: 30px;
+    }
+
+    .logos img{
+        width: 20px;
+        height: 18px;
+        margin-top: 5px;
+    }
+
+    .propos-button{
+        width: 80px;
+        height: 28px;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+
+    .propos-cv{
+        margin-left: 10px;
+    }
+
 }

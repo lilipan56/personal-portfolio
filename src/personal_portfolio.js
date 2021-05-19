@@ -36,6 +36,7 @@ window.onload = function () {
     contactNav.onclick = () => animateDisplay(contact);
     buttonProjets.onclick = () => animateDisplay(projets);
     buttonCv.onclick = () => animateDisplay(cv);
+
     
     // Default display when loading page
     animateDisplay(propos);
