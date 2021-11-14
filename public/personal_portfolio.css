@@ -220,18 +220,25 @@ nav{
     font-size: 14px;
 }
 
+.cv-download a{
+    text-decoration: none;  
+    color: #ffffff;
+}
+
 .cv-download:hover{
     background-color: transparent;
     color: #000000;
     border: 2px solid #0050FF;
 }
 
+
+
 .cv-contents{
     width: 870px;
     margin: 100px auto;
 }
 
-.skill-logos{
+.skill{
     display: flex;
     justify-content: space-around;
     margin-top: 45px;
@@ -337,7 +344,7 @@ nav{
 
 .experience:hover,
 .education:hover,
-.skill-logos:hover,
+.skill:hover,
 .language-flex:hover{
     background-color: #F4ECE6;
     border-color: #F4ECE6;
