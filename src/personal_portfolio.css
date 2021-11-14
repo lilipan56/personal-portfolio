@@ -135,8 +135,12 @@ nav{
     margin-top: 20px;
 }
 
-.presentation_right h1{
-    margin-top: 20px;
+.bref-skill-presentation{
+    margin-top: 80px;
+}
+
+.bref-skill-presentation h4{
+    margin-bottom: 50px;
 }
 
 .propos-button{
