@@ -154,10 +154,11 @@ nav{
 .propos-projets{
     background-color: #0050FF;
     color: #ffffff;
+    margin-left: 50px;
 }
 
 .propos-cv{
-    margin-left: 60px;
+    margin-left: 10px;
     background-color: #ffffff;
 }
 
